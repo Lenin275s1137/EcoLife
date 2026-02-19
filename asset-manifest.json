@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EcoLife/static/css/main.5b7d5eaf.css",
+    "main.js": "/EcoLife/static/js/main.2903612f.js",
+    "index.html": "/EcoLife/index.html",
+    "main.5b7d5eaf.css.map": "/EcoLife/static/css/main.5b7d5eaf.css.map",
+    "main.2903612f.js.map": "/EcoLife/static/js/main.2903612f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b7d5eaf.css",
+    "static/js/main.2903612f.js"
+  ]
+}
