@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+}
+
+/* .table_top  {
+  flex-direction: row-reverse;
+} */
+
+.table_top_right {
+  gap: 20px;
+}
+
+.table_bottom {
+  gap: 20px;
+}
+
+.table_top_left {
+  min-width: 125px;
+}
