@@ -1,4 +1,5 @@
 import { HrEvent } from "../types/vacancies";
+import { TableResult } from "../types/vacancies";
 
 export const testEvents: HrEvent[] = [
   // Сергиев Посад
@@ -48,13 +49,30 @@ export const testEvents: HrEvent[] = [
 ];
 
 function createTable(events: HrEvent[], date: string) {
-  const result = []
-  for (let i = 0; i<events.length; i++) {
-    if(events[i].date === date) {
-      result.push(events[i])
-    }
+
+  const filterEvents = events.filter((ev) => ev.date === date)
+
+  const result: TableResult = {}
+
+  for(let event of events) {
+    // if (result[event.idOp]) {
+
+    // }
+    // console.log(event.idOp)
   }
-  console.log(result.length)
+  
+  // const fiteredEvents = events.filter((ev) => {
+  //   return ev.date === date
+  // })
+  // console.log(fiteredEvents)
+
+  // const result = []
+  // for (let i = 0; i<events.length; i++) {
+  //   if(events[i].date === date) {
+  //     result.push(events[i])
+  //   }
+  // }
+  // console.log(result.length)
 }
 
-createTable(testEvents, "2026-03-01")
+createTable(testEvents, "2026-03-25")

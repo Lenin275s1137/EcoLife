@@ -10,7 +10,7 @@ function App() {
   //   title: 'Kasha'
   // }
 
-  const a: HrEventType = "need";
+  // const a: HrEventType = "need";
 
   const [events, setEvents] = useState<HrEvent[]>(testEvents);
 
