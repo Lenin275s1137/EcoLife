@@ -8,6 +8,7 @@
 
 .table_top_right {
   gap: 20px;
+  flex: 1;
 }
 
 .table_bottom {
@@ -15,5 +16,18 @@
 }
 
 .table_top_left {
-  min-width: 125px;
+  width: 125px;
+}
+
+.table_top {
+  width: 900px;
+  border: 1px solid black;
+}
+
+.vacancy {
+  flex: 1;
+}
+
+.row {
+  width: 100%;
 }

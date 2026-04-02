@@ -3,68 +3,280 @@ import { TableResult } from "../types/vacancies";
 
 export const testEvents: HrEvent[] = [
   // Сергиев Посад
-  { id: "1", type: "need", date: "2026-03-01", value: 10, idOp: "Sp", idVacancy: "cargo" },
-  { id: "2", type: "need", date: "2026-03-01", value: 8,  idOp: "Sp", idVacancy: "scrap" },
-  { id: "3", type: "need", date: "2026-03-01", value: 2,  idOp: "Sp", idVacancy: "multi" },
+  {
+    id: "1",
+    type: "need",
+    date: "2026-03-01",
+    value: 10,
+    idOp: "Sp",
+    idVacancy: "cargo",
+  },
+  {
+    id: "2",
+    type: "need",
+    date: "2026-03-01",
+    value: 8,
+    idOp: "Sp",
+    idVacancy: "scrap",
+  },
+  {
+    id: "3",
+    type: "need",
+    date: "2026-03-01",
+    value: 2,
+    idOp: "Sp",
+    idVacancy: "multi",
+  },
 
   // Домодедово
-  { id: "4", type: "need", date: "2026-03-01", value: 22, idOp: "Dmd", idVacancy: "cargo" },
-  { id: "5", type: "need", date: "2026-03-01", value: 1,  idOp: "Dmd", idVacancy: "scrap" },
-  { id: "6", type: "need", date: "2026-03-01", value: 1,  idOp: "Dmd", idVacancy: "multi" },
+  {
+    id: "4",
+    type: "need",
+    date: "2026-03-01",
+    value: 22,
+    idOp: "Dmd",
+    idVacancy: "cargo",
+  },
+  {
+    id: "5",
+    type: "need",
+    date: "2026-03-01",
+    value: 1,
+    idOp: "Dmd",
+    idVacancy: "scrap",
+  },
+  {
+    id: "6",
+    type: "need",
+    date: "2026-03-01",
+    value: 1,
+    idOp: "Dmd",
+    idVacancy: "multi",
+  },
 
   // Дубна
-  { id: "7",  type: "need", date: "2026-03-01", value: 39, idOp: "Dubna", idVacancy: "cargo" },
-  { id: "8",  type: "need", date: "2026-03-01", value: 1,  idOp: "Dubna", idVacancy: "scrap" },
-  { id: "9",  type: "need", date: "2026-03-01", value: 5,  idOp: "Dubna", idVacancy: "multi" },
+  {
+    id: "7",
+    type: "need",
+    date: "2026-03-01",
+    value: 39,
+    idOp: "Dubna",
+    idVacancy: "cargo",
+  },
+  {
+    id: "8",
+    type: "need",
+    date: "2026-03-01",
+    value: 1,
+    idOp: "Dubna",
+    idVacancy: "scrap",
+  },
+  {
+    id: "9",
+    type: "need",
+    date: "2026-03-01",
+    value: 5,
+    idOp: "Dubna",
+    idVacancy: "multi",
+  },
 
   // Химки
-  { id: "10", type: "need", date: "2026-03-01", value: 2, idOp: "Himki", idVacancy: "cargo" },
-  { id: "11", type: "need", date: "2026-03-01", value: 15,  idOp: "Himki", idVacancy: "scrap" },
-  { id: "12", type: "need", date: "2026-03-01", value: 1,  idOp: "Himki", idVacancy: "multi" },
+  {
+    id: "10",
+    type: "need",
+    date: "2026-03-01",
+    value: 2,
+    idOp: "Himki",
+    idVacancy: "cargo",
+  },
+  {
+    id: "11",
+    type: "need",
+    date: "2026-03-01",
+    value: 15,
+    idOp: "Himki",
+    idVacancy: "scrap",
+  },
+  {
+    id: "12",
+    type: "fire",
+    date: "2026-03-25",
+    value: 1,
+    idOp: "Himki",
+    idVacancy: "multi",
+  },
 
   // Одинцово
-  { id: "13", type: "need", date: "2026-03-01", value: 22, idOp: "Odin", idVacancy: "cargo" },
-  { id: "14", type: "need", date: "2026-03-01", value: 12,  idOp: "Odin", idVacancy: "scrap" },
-  { id: "15", type: "need", date: "2026-03-01", value: 1,  idOp: "Odin", idVacancy: "multi" },
+  {
+    id: "13",
+    type: "need",
+    date: "2026-03-01",
+    value: 22,
+    idOp: "Odin",
+    idVacancy: "cargo",
+  },
+  {
+    id: "14",
+    type: "need",
+    date: "2026-03-01",
+    value: 12,
+    idOp: "Odin",
+    idVacancy: "scrap",
+  },
+  {
+    id: "15",
+    type: "need",
+    date: "2026-03-25",
+    value: 1,
+    idOp: "Odin",
+    idVacancy: "multi",
+  },
 
   // Руза
-  { id: "16", type: "need", date: "2026-03-01", value: 20, idOp: "Ruza", idVacancy: "cargo" },
-  { id: "17", type: "need", date: "2026-03-01", value: 8,  idOp: "Ruza", idVacancy: "scrap" },
-  { id: "18", type: "need", date: "2026-03-01", value: 1,  idOp: "Ruza", idVacancy: "multi" },
+  {
+    id: "16",
+    type: "need",
+    date: "2026-03-01",
+    value: 20,
+    idOp: "Ruza",
+    idVacancy: "cargo",
+  },
+  {
+    id: "17",
+    type: "need",
+    date: "2026-03-01",
+    value: 8,
+    idOp: "Ruza",
+    idVacancy: "scrap",
+  },
+  {
+    id: "18",
+    type: "need",
+    date: "2026-03-01",
+    value: 1,
+    idOp: "Ruza",
+    idVacancy: "multi",
+  },
 
   // Истра
-  { id: "19", type: "need", date: "2026-03-01", value: 22, idOp: "Istra", idVacancy: "cargo" },
-  { id: "20", type: "need", date: "2026-03-01", value: 1,  idOp: "Istra", idVacancy: "scrap" },
-  { id: "21", type: "need", date: "2026-03-09", value: 1,  idOp: "Istra", idVacancy: "multi" },
+  {
+    id: "19",
+    type: "need",
+    date: "2026-03-01",
+    value: 22,
+    idOp: "Istra",
+    idVacancy: "cargo",
+  },
+  {
+    id: "20",
+    type: "need",
+    date: "2026-03-01",
+    value: 1,
+    idOp: "Istra",
+    idVacancy: "scrap",
+  },
+  {
+    id: "21",
+    type: "need",
+    date: "2026-03-09",
+    value: 1,
+    idOp: "Istra",
+    idVacancy: "multi",
+  },
 
   // Кашира
-  { id: "22", type: "need", date: "2026-03-01", value: 22, idOp: "Kasha", idVacancy: "cargo" },
-  { id: "23", type: "need", date: "2026-03-01", value: 1,  idOp: "Kasha", idVacancy: "scrap" },
-  { id: "24", type: "need", date: "2026-03-01", value: 1,  idOp: "Kasha", idVacancy: "multi" },
+  {
+    id: "22",
+    type: "need",
+    date: "2026-03-25",
+    value: 22,
+    idOp: "Kasha",
+    idVacancy: "cargo",
+  },
+  {
+    id: "23",
+    type: "need",
+    date: "2026-03-01",
+    value: 1,
+    idOp: "Kasha",
+    idVacancy: "scrap",
+  },
+  {
+    id: "24",
+    type: "need",
+    date: "2026-03-01",
+    value: 1,
+    idOp: "Kasha",
+    idVacancy: "multi",
+  },
 
   // Луховицы
-  { id: "25", type: "need", date: "2026-03-01", value: 22, idOp: "Luch", idVacancy: "cargo" },
-  { id: "26", type: "need", date: "2026-03-01", value: 5,  idOp: "Luch", idVacancy: "scrap" },
-  { id: "27", type: "need", date: "2026-03-25", value: 1,  idOp: "Luch", idVacancy: "multi" },
+  {
+    id: "25",
+    type: "need",
+    date: "2026-03-25",
+    value: 22,
+    idOp: "Luch",
+    idVacancy: "cargo",
+  },
+  {
+    id: "26",
+    type: "need",
+    date: "2026-03-01",
+    value: 5,
+    idOp: "Luch",
+    idVacancy: "scrap",
+  },
+  {
+    id: "27",
+    type: "need",
+    date: "2026-03-25",
+    value: 1,
+    idOp: "Luch",
+    idVacancy: "multi",
+  },
 ];
 
-function createTable(events: HrEvent[], date: string) {
+export function createTable(events: HrEvent[], date: string): TableResult {
+  const filterEvents = events.filter((ev) => ev.date === date);
 
-  const filterEvents = events.filter((ev) => ev.date === date)
+  const result: TableResult = {};
 
-  const result: TableResult = {}
-
-  for(let event of events) {
-    // if (result[event.idOp]) {
-
-    // }
-    // console.log(event.idOp)
-  }
-  
-  // const fiteredEvents = events.filter((ev) => {
+  //   const fiteredEvents = events.filter((ev) => {
   //   return ev.date === date
   // })
   // console.log(fiteredEvents)
+
+  for (let event of filterEvents) {
+    // console.log(event)
+    if (!result[event.idOp]) {
+      result[event.idOp] = {};
+    }
+    if (!result[event.idOp][event.idVacancy]) {
+      result[event.idOp][event.idVacancy] = {
+        need: 0,
+        fire: 0,
+        hire: 0,
+        transfer: 0,
+      };
+    }
+    const cell = result[event.idOp][event.idVacancy];
+
+    if (event.type === "need") {
+      cell.need = cell.need + event.value;
+    } else if (event.type === "fire") {
+      cell.fire = cell.fire + event.value;
+    } else if (event.type === "hire") {
+      cell.hire = cell.hire + event.value;
+    } else if (event.type === "transfer") {
+      cell.transfer = cell.transfer + event.value;
+    }
+
+    // console.log(event.idOp)
+  }
+
+
+  return result;
 
   // const result = []
   // for (let i = 0; i<events.length; i++) {
@@ -75,4 +287,4 @@ function createTable(events: HrEvent[], date: string) {
   // console.log(result.length)
 }
 
-createTable(testEvents, "2026-03-25")
+// createTable(testEvents, "2026-03-01");
