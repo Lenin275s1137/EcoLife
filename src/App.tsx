@@ -5,7 +5,6 @@ import { OP, vacancies } from "./data/opvacancies";
 import { testEvents } from "./data/events";
 import { createTable } from "./data/events";
 import { TableResult } from "./types/vacancies";
-import { tab } from "@testing-library/user-event/dist/tab";
 
 function App() {
   const [events, setEvents] = useState<HrEvent[]>(testEvents);
@@ -45,12 +44,28 @@ function App() {
               return <p className="op_item">{el}</p>;
             })}
           </div>
-          <div>
-            <p>
-              {Object.keys(table).map((Op) => {
+          <div className="table_info">
+            {Object.entries(OP).map(([opName]) => {
+              return (
+                <div className="flex">
+                  {Object.keys(vacancies).map((vacName) => {
+                    // return <p className="cell">{opName} {vacName}</p>
+                    const cell = table[opName]?.[vacName];
+                    return (
+                      <div>
+                        <p>Потребность: {cell?.need || 0}</p>
+                        <p>Принято: {cell?.hire || 0}</p>
+                        <p>Уволено: {cell?.fire || 0} </p>
+                        <p>Переедено: {cell?.transfer || 0}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+            {/* {Object.keys(table).map((Op) => {
                 return (
                   <p className="flex row">
-                    {" "}
                     {Object.keys(table[Op]).map((vac) => {
                       return (
                         <p>
@@ -60,8 +75,7 @@ function App() {
                     })}
                   </p>
                 );
-              })}
-            </p>
+              })} */}
           </div>
         </div>
       </div>

@@ -18,4 +18,22 @@ function getMostFrequent(obj) {
     console.log(findKey)
 }
 
-getMostFrequent({ a: 2, b: 5, c: 1 })
+// getMostFrequent({ a: 2, b: 5, c: 1 })
+
+const OP = {
+    Sp: "Сергиев Посад",
+    Dmd: "Домодедово",
+    Dubna: "Дубна",
+    Himki: "Химки",
+    Odin: "Одинцово",
+    Ruza: "Руза",
+    Istra: "Истра",
+    Kasha: "Кашира",
+    Luch: "Луховицы",
+  };
+
+  const res = Object.entries(OP).map(([el]) => {
+    console.log(el)
+  })
+
+  console.log(res)

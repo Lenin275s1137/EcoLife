@@ -19,10 +19,12 @@ function App() {
                                     return _jsx("p", { className: "vacancy", children: el });
                                 }) })] }), _jsxs("div", { className: "table_bottom flex", children: [_jsx("div", { children: Object.values(OP).map((el) => {
                                     return _jsx("p", { className: "op_item", children: el });
-                                }) }), _jsx("div", { children: _jsx("p", { children: Object.keys(table).map((Op) => {
-                                        return (_jsxs("p", { className: "flex row", children: [" ", Object.keys(table[Op]).map((vac) => {
-                                                    return (_jsxs("p", { children: [Op, " ", vac] }));
-                                                })] }));
-                                    }) }) })] })] })] }));
+                                }) }), _jsx("div", { className: "table_info", children: Object.entries(OP).map(([opName]) => {
+                                    return (_jsx("div", { className: "flex", children: Object.keys(vacancies).map((vacName) => {
+                                            // return <p className="cell">{opName} {vacName}</p>
+                                            const cell = table[opName]?.[vacName];
+                                            return (_jsxs("div", { children: [_jsxs("p", { children: ["\u041F\u043E\u0442\u0440\u0435\u0431\u043D\u043E\u0441\u0442\u044C: ", cell?.need || 0] }), _jsxs("p", { children: ["\u041F\u0440\u0438\u043D\u044F\u0442\u043E: ", cell?.hire || 0] }), _jsxs("p", { children: ["\u0423\u0432\u043E\u043B\u0435\u043D\u043E: ", cell?.fire || 0, " "] }), _jsxs("p", { children: ["\u041F\u0435\u0440\u0435\u0435\u0434\u0435\u043D\u043E: ", cell?.transfer || 0] })] }));
+                                        }) }));
+                                }) })] })] })] }));
 }
 export default App;
